@@ -216,7 +216,7 @@ if(isset($_POST['update_contact'])){
     facebook = '$facebook',
     instagram ='$instagram',
     twitter ='$twitter',
-    linkedin ='$linkedin'
+    linkedin ='$linkedin',
     gsm ='$gsm'
     ");
     $update_c=$update_contact -> execute();
@@ -244,18 +244,18 @@ if(isset($_POST['insert_settings'])){
         header("Location: settings.php?insert_set=no");
     }
 }
-//update site settings
+//update settings
 if (isset($_POST['update_settings'])) {
     $site_title = $_POST['site_title'];
     $namee = $_POST['namee'];
     $password = $_POST['password'];
     $password2 = $_POST['password2'];
 
-    if($password == $password2){
-        if(strlen($password) >= 6){
+    if ($password == $password2) {
+        if (strlen($password) >=6) {
             $pass1 = md5($password);
-            $newpassword = $db -> prepare("UPDATE site_settings SET password='$pass1' ");
-            $updatepass=$newpassword -> execute();
+            $newpassword = $db->prepare("UPDATE user SET password='$pass1' ");
+            $updatepass = $newpassword->execute();
         }
     }
     $update_settings = $db->prepare("UPDATE site_settings SET 

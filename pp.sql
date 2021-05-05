@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 05 May 2021, 17:21:23
+-- Üretim Zamanı: 05 May 2021, 22:22:14
 -- Sunucu sürümü: 10.4.18-MariaDB
 -- PHP Sürümü: 7.3.27
 
@@ -39,7 +39,7 @@ CREATE TABLE `about_me` (
 --
 
 INSERT INTO `about_me` (`about_id`, `about_title`, `content`, `cv`) VALUES
-(1, 'Hakkımda', 'MERHABA', '2020-11-05 (1).png');
+(1, 'Hakkımda', 'MELİKE EKİNCİ', '2020-11-05 (1).png');
 
 -- --------------------------------------------------------
 
@@ -64,7 +64,7 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`contact_id`, `content`, `locationn`, `email`, `facebook`, `instagram`, `twitter`, `linkedin`, `gsm`) VALUES
-(1, 'İLETİŞİM', 'gebze', 'melike@e.com', 'https://www.google.com/', 'https://www.google.com/', 'https://www.google.com/', 'https://www.google.com/', '05453864552');
+(1, 'İLETİŞİM', 'Kocaeli/GEBZE', 'melike@e.com', 'https://www.google.com/', 'https://www.google.com/', 'https://www.google.com/', 'https://www.google.com/', '05453864552');
 
 -- --------------------------------------------------------
 
@@ -83,7 +83,7 @@ CREATE TABLE `site_settings` (
 --
 
 INSERT INTO `site_settings` (`settings_id`, `site_title`, `namee`) VALUES
-(1, 'ayarlar', 'melike');
+(1, 'Melike Ekinci', 'Melike Ekinci');
 
 -- --------------------------------------------------------
 
@@ -109,7 +109,7 @@ CREATE TABLE `skills` (
 --
 
 INSERT INTO `skills` (`skill_id`, `site_title`, `first_skill`, `second_skill`, `third_skill`, `fourth_skill`, `first_counter`, `second_counter`, `third_counter`, `fourth_counter`) VALUES
-(1, 'YETENEKLERİM', '1.y', '2.y', '3.y', '4.y', '20', '30', '40', '55');
+(1, 'YETENEKLERİM', '1.y', '2.y', '3.y', '4.y', '20', '30', '40', '60');
 
 -- --------------------------------------------------------
 
@@ -129,7 +129,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`user_id`, `user_name`, `email`, `password`) VALUES
-(12, 'melike', 'melike@e.com', 'fcea920f7412b5da7be0cf42b8c93759');
+(12, 'melike', 'melike@e.com', 'e10adc3949ba59abbe56e057f20f883e');
 
 --
 -- Dökümü yapılmış tablolar için indeksler
