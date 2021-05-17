@@ -249,13 +249,23 @@ if (isset($_POST['update_settings'])) {
     $site_title = $_POST['site_title'];
     $namee = $_POST['namee'];
     $password = $_POST['password'];
-    $password2 = $_POST['password2'];
+    $npassword = $_POST['npassword'];
+    $npassword2 = $_POST['npassword2'];
+    $pass2 = md5($password);
 
-    if ($password == $password2) {
-        if (strlen($password) >=6) {
-            $pass1 = md5($password);
-            $newpassword = $db->prepare("UPDATE user SET password='$pass1' ");
-            $updatepass = $newpassword->execute();
+    $chancepass = $db->prepare("SELECT * FROM user WHERE user_id=1 AND password='$pass2'");
+    $chancepass->execute(); 
+    $countt = $chancepass->rowCount();
+    if ($countt == 1) {
+        $pass3=md5($npassword);
+        if(!($pass3==$pass2)){
+            if ($npassword == $npassword2) {
+                if (strlen($npassword) >= 6) {
+                $pass1 = md5($npassword);
+                $admin_newpassword = $db->prepare("UPDATE user SET password='$pass1' ");
+                $updatepass = $admin_newpassword->execute();
+                }
+            }
         }
     }
     $update_settings = $db->prepare("UPDATE site_settings SET 
@@ -267,7 +277,7 @@ if (isset($_POST['update_settings'])) {
     $update_set = $update_settings->execute();
 
     if ($update_set and $updatepass) {
-        header("Location: settings.php?update_set=ok");
+        header("Location: logout.php");
     } else {
         header("Location: settings.php?update_set=no");
     }

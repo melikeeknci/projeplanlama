@@ -64,19 +64,26 @@ $fetch = $fetch_settings->fetch(PDO::FETCH_ASSOC);
                 <input type="text" name="namee" value="<?php echo $fetch['namee'] ?>" required="required" class="form-control col-md-7 col-xs-12">
               </div>
             </div>
+            <div class="item form-group">
+              <label class="control-label col-md-3 col-sm-3 col-xs-12">Eski Şifre
+              </label>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <input type="password" name="password" required="required" class="form-control col-md-7 col-xs-12">
+              </div>
+            </div>
 
             <div class="item form-group">
               <label class="control-label col-md-3 col-sm-3 col-xs-12">Şifre
               </label>
               <div class="col-md-6 col-sm-6 col-xs-12">
-                <input type="password" name="password" required="required" class="form-control col-md-7 col-xs-12">
+                <input type="password" name="npassword" required="required" class="form-control col-md-7 col-xs-12">
               </div>
             </div>
             <div class="item form-group">
               <label class="control-label col-md-3 col-sm-3 col-xs-12">Şifre Tekrarı
               </label>
               <div class="col-md-6 col-sm-6 col-xs-12">
-                <input type="password" name="password2" required="required" class="form-control col-md-7 col-xs-12">
+                <input type="password" name="npassword2" required="required" class="form-control col-md-7 col-xs-12">
               </div>
             </div>
             <div class="form-group">

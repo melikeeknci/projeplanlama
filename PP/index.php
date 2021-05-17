@@ -1,6 +1,6 @@
 
 <?php
-include '../nedmin/connect.php';
+include 'nedmin/connect.php';
 $fetch_settings = $db ->prepare("SELECT * FROM site_settings WHERE settings_id=1");
     $fetch_settings->execute();
     $fetch_set=$fetch_settings->fetch(PDO::FETCH_ASSOC);
@@ -31,22 +31,22 @@ $fetch_settings = $db ->prepare("SELECT * FROM site_settings WHERE settings_id=1
 
 <!-- Favicons
     ================================================== -->
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+<link rel="shortcut icon" href="pp/img/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="pp/img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="pp/img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="pp/img/apple-touch-icon-114x114.png">
 
 <!-- Bootstrap -->
-<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" type="text/css"  href="pp/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="pp/fonts/font-awesome/css/font-awesome.css">
 
 <!-- Stylesheet
     ================================================== -->
-<link rel="stylesheet" type="text/css"  href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+<link rel="stylesheet" type="text/css"  href="pp/css/style.css">
+<link rel="stylesheet" type="text/css" href="pp/css/prettyPhoto.css">
 <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script type="text/javascript" src="pp/js/modernizr.custom.js"></script>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -102,7 +102,7 @@ $fetch_settings = $db ->prepare("SELECT * FROM site_settings WHERE settings_id=1
       <hr>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-md-6"> <img src="img\WhatsApp Image 2021-03-17 at 17.35.59.jpeg" style="width: 300px;" style="height: 200px;" class="img-responsive" alt=""> </div>
+      <div class="col-xs-12 col-md-6"> <img src="pp/img\WhatsApp Image 2021-03-17 at 17.35.59.jpeg" style="width: 300px;" style="height: 200px;" class="img-responsive" alt=""> </div>
       <div class="col-xs-12 col-md-6">
         <div class="about-text">
         <p><?php echo $fetch_a['content'] ?> </p>
@@ -201,16 +201,16 @@ $fetch_settings = $db ->prepare("SELECT * FROM site_settings WHERE settings_id=1
     </div>
   </div>
 </div>
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
-<script type="text/javascript" src="js/bootstrap.js"></script> 
-<script type="text/javascript" src="js/SmoothScroll.js"></script> 
-<script type="text/javascript" src="js/easypiechart.js"></script> 
-<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
-<script type="text/javascript" src="js/jquery.isotope.js"></script> 
-<script type="text/javascript" src="js/jquery.counterup.js"></script> 
-<script type="text/javascript" src="js/waypoints.js"></script> 
-<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
-<script type="text/javascript" src="js/contact_me.js"></script> 
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="pp/js/jquery.1.11.1.js"></script> 
+<script type="text/javascript" src="pp/js/bootstrap.js"></script> 
+<script type="text/javascript" src="pp/js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="pp/js/easypiechart.js"></script> 
+<script type="text/javascript" src="pp/js/jquery.prettyPhoto.js"></script> 
+<script type="text/javascript" src="pp/js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="pp/js/jquery.counterup.js"></script> 
+<script type="text/javascript" src="pp/js/waypoints.js"></script> 
+<script type="text/javascript" src="pp/js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="pp/js/contact_me.js"></script> 
+<script type="text/javascript" src="pp/js/main.js"></script>
 </body>
 </html>
