@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 17 May 2021, 21:57:05
+-- Üretim Zamanı: 13 Haz 2021, 08:02:16
 -- Sunucu sürümü: 10.4.18-MariaDB
 -- PHP Sürümü: 7.3.27
 
@@ -129,7 +129,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`user_id`, `user_name`, `email`, `password`) VALUES
-(1, 'melike', 'melike@e.com', 'e10adc3949ba59abbe56e057f20f883e');
+(13, 'admin', 'melikeekinci123@gmail.com', '93279e3308bdbbeed946fc965017f67a');
 
 --
 -- Dökümü yapılmış tablolar için indeksler
@@ -179,7 +179,7 @@ ALTER TABLE `about_me`
 -- Tablo için AUTO_INCREMENT değeri `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
